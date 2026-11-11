@@ -1,26 +1,80 @@
 @import "tailwindcss";
 
+/* ------------------------------------------------------------------ */
+/* Design tokens.                                                      */
+/* Text colors are the exact Figma variables. Brand/surface colors     */
+/* (navy, red, peach, lavender) are eyeballed from the reference       */
+/* images — replace with Figma values if/when they are exported.       */
+/* ------------------------------------------------------------------ */
+@theme {
+  /* Text — exact Figma tokens */
+  --color-ink: #1f2937; /* Primary Font */
+  --color-accent: #5d7596; /* Secondary Font — hero accent words, eyebrows, subtitles */
+  --color-muted: #7d90ab; /* Secondary Font Lighter — notes, small labels */
+  --color-slate-dark: #3c5477; /* Secondary Font Darker */
+  --color-link: #384e95; /* Nav Link */
+  --color-link2: #365e96; /* Nav Link 2 — in-menu CTA / footer links */
+
+  /* Brand blue (logo + deep section) */
+  --color-navy: #274896;
+  --color-navy-deep: #1f3a7a;
+
+  /* Surfaces / accents (eyeballed) */
+  --color-brandred: #c72e3b; /* emergency + phone */
+  --color-dark: #17202e; /* dark filled buttons */
+  --color-peach: #fdeceb; /* "in pain" banner */
+  --color-peach-border: #f6d6d3;
+  --color-lavender: #edeef7; /* insurance strip */
+  --color-hairline: #e6e8ef; /* thin borders */
+
+  /* Typography */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-nav:
+    var(--font-be-vietnam), var(--font-inter), ui-sans-serif, system-ui,
+    sans-serif;
+
+  /* Layout */
+  --breakpoint-xs: 24rem;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: var(--color-ink);
+  /* Hero accent words — JS nudges this a touch deeper as you scroll (hero-image.tsx) */
+  --hero-accent: #5679ad;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Uppercase micro-label used throughout the design */
+.eyebrow {
+  font-size: 0.6875rem;
+  line-height: 1.1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
 }

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Edison Dental 27">
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <rect x="0" y="0" width="1200" height="12" fill="#274896"/>
+  <rect x="0" y="618" width="1200" height="12" fill="#274896"/>
+  <g font-family="Inter,Arial,sans-serif">
+    <text x="90" y="250" font-size="34" letter-spacing="4" font-weight="700" fill="#5b8bd6">FAMILY-OWNED · EDISON, NJ</text>
+    <text x="86" y="360" font-size="86" font-weight="700" fill="#1c2434">Considered <tspan fill="#5b8bd6">care,</tspan></text>
+    <text x="86" y="460" font-size="86" font-weight="700" fill="#1c2434">considered <tspan fill="#5b8bd6">smiles.</tspan></text>
+    <text x="90" y="545" font-size="30" fill="#6b7280">Edison Dental 27 · edisondental27.com · (732) 555-0127</text>
+  </g>
+</svg>

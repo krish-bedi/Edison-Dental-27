@@ -1,0 +1,21 @@
+# Edison Dental 27
+
+> Family-owned dental practice in Edison, NJ. Four dentists and an in-house
+> dental lab providing preventive, restorative, cosmetic, and specialty care.
+> Dr. Yan Ma has cared for Edison families for two decades.
+
+## Contact
+- Phone: (732) 555-0127
+- Location: Edison, NJ (08817)
+- Hours: Monday–Friday, 8am–6pm
+- Emergency: Same-day care for pain, trauma, and infection.
+
+## Services
+- Preventive & Family Care: Cleanings & Hygiene, New Patient Exam, Gum Disease Treatment, Children's Dentistry
+- Restorative Dentistry: Fillings, Crowns & Bridges, Root Canals, Dental Implants, Dentures
+- Cosmetic & Orthodontics: Veneers, Teeth Whitening, Invisalign, Traditional Braces, Smile Makeovers
+- Specialty & Advanced: Wisdom Teeth & Extractions, TMJ & Night Guards, Sleep Apnea, Full-Mouth Reconstruction
+
+## Insurance & Financing
+- In-network with Delta Dental; fee-for-service for other plans.
+- Out-of-network PPO claims filed for you. Cherry financing available.
